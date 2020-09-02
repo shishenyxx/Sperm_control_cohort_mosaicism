@@ -1,0 +1,20 @@
+####This script is used to redefine the read group name
+
+#!/bin/csh
+#PBS -q home
+#PBS -N Regroup-${SAMPLE}-${GROUP}
+#PBS -l nodes=1:ppn=4,mem=10gb
+#PBS -l walltime=64:00:00
+#PBS -o log/Regroup-${GROUP}.stdout
+#PBS -e log/Regroup-${GROUP}.stderr
+#PBS -V
+#PBS -M xiy010@health.ucsd.edu
+#PBS -m abe
+
+cd regroup
+
+java -Xmx8g -jar bin/picard.jar AddOrReplaceReadGroups I=${INPUT} O=regroup/${GROUP}.bam RGLB=${GROUP} RGPL=illumina RGPU=${GROUP} RGSM=${GROUP} VALIDATION_STRINGENCY=SILENT
+ 
+sleep 60 
+
+samtools index regroup/${GROUP}.bam
