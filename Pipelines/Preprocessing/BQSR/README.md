@@ -4,7 +4,7 @@
 
 ## Before start, make sure you have:
 #### [java](https://www.java.com/en/download/help/linux_x64_install.xml) for Linux.
-#### [GATK4](https://github.com/broadgsa/gatk/releases) 4 for this pipeline.
+#### [GATK4](https://github.com/broadgsa/gatk/releases) GATK versioni 4 for this pipeline.
 
 ----------------------------
 
