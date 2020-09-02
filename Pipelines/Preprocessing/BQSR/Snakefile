@@ -1,0 +1,59 @@
+configfile: "snake_conf.yaml"
+
+localrules: all
+
+def read_samples(path):
+    samples = {}
+    with open(path, "r") as file:
+        for line in file:
+            if line.startswith("#"):
+                continue
+            sample, bam_path = line.rstrip().split("\t")
+            samples[sample]=bam_path
+    return samples
+
+
+OUT_DIR = config['out_dir']
+SCRATCH_DIR = config['scratch_dir']
+
+BAM_PATHS = config['bam_paths']
+SAMPLES = read_samples(BAM_PATHS)
+
+REFERENCE = config['ref_fasta']
+MILLS_INDELS = config['mills_indels']
+G1000_INDELS = config['indels_1000g']
+DBSNP = config['dbsnp']
+
+GATK4 = config['gatk4']
+
+
+
+rule all:
+    input:
+        expand(OUT_DIR + "/final/{sample}.bam",
+                   sample=SAMPLES.keys())
+
+rule bqsr:
+    input:
+        bam = lambda wildcards: SAMPLES[wildcards.sample]
+    output:
+        recal_tab = temp(SCRATCH_DIR + "/recal/{sample}.recal.table"),
+        bam = OUT_DIR + "/final/{sample}.bam"
+    params:
+        cluster = "-q hotel -l nodes=1:ppn=8 -l walltime=96:00:00", 
+        mem = 30
+    shell:
+        "{GATK4} --java-options '-Xmx{params.mem}G'"
+        "    BaseRecalibrator "
+        "    -I {input.bam} "
+        "    -O {output.recal_tab} "
+        "    -R {REFERENCE} "
+        "    --known-sites {MILLS_INDELS} "
+        "    --known-sites {G1000_INDELS} "
+        "    --known-sites {DBSNP}; "
+
+        "{GATK4} --java-options '-Xmx{params.mem}G'"
+        "     ApplyBQSR "
+        "    -I {input.bam} "
+        "    -O {output.bam} "
+        "    --bqsr-recal-file {output.recal_tab}; "
