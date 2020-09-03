@@ -54,4 +54,4 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Mutation_accumulation_model/fit_afs.py) for the estimation of accumulation of mutations through a stepwise exponential regression regression model.
 
-[Codes]() for the analysis of accuracy of number of variants in different groups. 
+[Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Plot/Analysis_of_validation_rates.r) for the analysis of accuracy of number of variants and estimate limit of sampling with age in different groups. 
