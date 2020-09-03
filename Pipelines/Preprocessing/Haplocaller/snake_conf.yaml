@@ -1,0 +1,16 @@
+n_intervals : 100
+
+#inout files and paths
+input_paths : "input_files.txt"
+out_dir : "Ctrl_cohort_gvcf"
+scratch_dir : "Ctrl_cohort_gvcf/scratch"
+
+#tools 
+gatk4 : "/src/gatk-4.0.8.1/gatk-package-4.0.8.1-local.jar"
+java : "/java/jre1.8.0_73/bin/java"
+
+#param files
+dbsnp: "resources/gatk_grch37/dbsnp_138.b37.vcf"
+repetitive_region_bed : "resources/all_repeats.b37.bed"
+ref_bed : "hg19/bed_files/wgs_nochr.bed"
+ref_fasta : "references/GRCh37_plus_decoy/hs37d5.fa"
