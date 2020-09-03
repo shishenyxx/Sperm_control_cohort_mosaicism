@@ -22,7 +22,7 @@ Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/s
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Plot/QC/Simulated_variants.r) to plot the calls of different methods on simulated variants.
 
-[Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/Circos) for the circos plot.
+[Codes and data](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/Circos) for different CIRCOS plots.
 ### 2. Pipelines for the process of Targeted Amplicon Sequencing (TAS)
 #### 2.1 Pipelines for TAS data alignment and processing
 
