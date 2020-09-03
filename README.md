@@ -31,7 +31,7 @@ Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/s
 
 After variant calling from different strategies, variants were annotated and filtered by [a python script](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Pipelines/Mosaic_Calls/control_cohort_complete_from_variant_table_MSMF03.py) and positive mosaic variants as well as the corresponding samples and additional information were annotated.
 
-[Codes](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/permutation) for permutation analysis from gnomAD and [codes](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/blob/master/plotting/Genomic_enrichment/Plot_enrichment.r) for plotting the permutation result.
+[Codes](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/permutation) for permutation analysis from gnomAD and [codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/cc_annotation_counts02.py) for plotting the permutation result.
 
 #### 3.2 Pipelines for statistically analysis, QC, and the related plotting
 #### 3.3 Codes for statistical modeling
