@@ -20,6 +20,8 @@ Codes for [depth of coverage](https://github.com/shishenyxx/Sperm_control_cohort
 
 Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Pipelines/Mosaic_Calls/Mutect2_single_mode/leave_one_out) version for the YA cohort, and a ["Full Panel of Normal"](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/pipelines/WGS_SNV_indel_calling_pipeline/Mutect2_single_mode) version for the AA and ASD cohort. The MuTect2 (single mode) result is followed by [MosaicForecast](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/pipelines/WGS_SNV_indel_calling_pipeline/MosaicForecast_pipeline), and the [variant annotation pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline).
 
+[Codes] to plot the calls of different methods on simulated variants.
+
 ### 2. Pipelines for the process of Targeted Amplicon Sequencing (TAS)
 #### 2.1 Pipelines for TAS data alignment and processing
 
@@ -43,3 +45,5 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 #### 3.2 Pipelines for statistically analysis, and the related plotting
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Mutation_accumulation_model/fit_afs.py) for the estimation of accumulation of mutations through a stepwise exponential regression regression model.
+
+[Codes]() for the analysis of accuracy of number of variants in different groups. 
