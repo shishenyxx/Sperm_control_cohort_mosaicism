@@ -1,4 +1,4 @@
-Codes for processing of whole genome sequenced bams.
+Pipelines for processing of whole genome sequenced bams.
 
 ## BQSR
 [Pipelines](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Pipelines/Preprocessing/BQSR) for Base Qualtiy Score Recalibration.
