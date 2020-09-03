@@ -2,6 +2,8 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/).
 
+-----------------------------------
+
 ### 1. Pipelines for the process of whole-genome sequencing data
 
 #### 1.1 Pipelines for WGS data process and quality control
@@ -23,6 +25,9 @@ Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/s
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Plot/QC/Simulated_variants.r) to plot the calls of different methods on simulated variants.
 
 [Codes and data](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/Circos) for different CIRCOS plots.
+
+-----------------------------------
+
 ### 2. Pipelines for the process of Targeted Amplicon Sequencing (TAS)
 #### 2.1 Pipelines for TAS data alignment and processing
 
@@ -33,6 +38,8 @@ Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/s
 [Pipelines](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline) for AF quantification and variant anntations.
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Pipelines/cc_validation_table_sperm_abc_saliva_blood.py) to filter and annotate on TAS data.
+
+-----------------------------------
 
 ### 3. Pipelines for the data analysis, variant filtering, comprehensive annotations, and statistical analysis
 #### 3.1 Pipelines for mosaic variant determination, annotations, and plotting
