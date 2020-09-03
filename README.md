@@ -33,7 +33,6 @@ After variant calling from different strategies, variants were annotated and fil
 
 [Codes](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/permutation) for permutation analysis from gnomAD and [codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/cc_annotation_counts02.py) for plotting the permutation result.
 
-#### 3.2 Pipelines for statistically analysis, QC, and the related plotting
-#### 3.3 Codes for statistical modeling
+#### 3.2 Pipelines for statistically analysis, and the related plotting
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Mutation_accumulation_model/fit_afs.py) for the estimation of accumulation of mutations through a stepwise exponential regression regression model.
