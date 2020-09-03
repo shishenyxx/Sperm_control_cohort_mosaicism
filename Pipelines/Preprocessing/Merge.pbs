@@ -1,0 +1,20 @@
+###This script is used for merging bams
+
+#!/bin/csh
+#PBS -q home
+#PBS -N MERGE-${SAMPLE}
+#PBS -l walltime=168:00:00
+#PBS -o Merge/${SAMPLE}.stdout
+#PBS -e Merge/${SAMPLE}.stderr
+#PBS -V
+#PBS -M xiy010@health.ucsd.edu
+#PBS -m abe
+module load samtools
+
+cd /oasis/tscc/scratch/xiy010/Control_cohort_BQSR/regroup/merged
+
+samtools merge Merged_Rady_Bams/${SAMPLE}.bam ${SAMPLE}-1.bam ${SAMPLE}-2.bam ${SAMPLE}-3.bam ${SAMPLE}-4.bam ${SAMPLE}-5.bam ${SAMPLE}-6.bam ${SAMPLE}-7.bam ${SAMPLE}-8.bam
+
+sleep 60
+
+samtools index Merged_Rady_Bams/${SAMPLE}.bam
