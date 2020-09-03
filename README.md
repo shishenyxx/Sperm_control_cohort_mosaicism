@@ -20,8 +20,9 @@ Codes for [depth of coverage](https://github.com/shishenyxx/Sperm_control_cohort
 
 Pipelines for MuTect2 (single mode) has a ["Leave One Out"](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Pipelines/Mosaic_Calls/Mutect2_single_mode/leave_one_out) version for the YA cohort, and a ["Full Panel of Normal"](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/pipelines/WGS_SNV_indel_calling_pipeline/Mutect2_single_mode) version for the AA and ASD cohort. The MuTect2 (single mode) result is followed by [MosaicForecast](https://github.com/shishenyxx/Adult_brain_somatic_mosaicism/tree/master/pipelines/WGS_SNV_indel_calling_pipeline/MosaicForecast_pipeline), and the [variant annotation pipeline](https://github.com/shishenyxx/PASM/tree/master/Snakemake_pipeline).
 
-[Codes] to plot the calls of different methods on simulated variants.
+[Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Plot/QC/Simulated_variants.r) to plot the calls of different methods on simulated variants.
 
+[Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/tree/master/Plot/Circos) for the circos plot.
 ### 2. Pipelines for the process of Targeted Amplicon Sequencing (TAS)
 #### 2.1 Pipelines for TAS data alignment and processing
 
