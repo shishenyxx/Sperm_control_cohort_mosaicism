@@ -1,0 +1,11 @@
+n_intervals: 100
+
+input_files : "single_mode_mutect/pon_files.txt"
+out_dir : "single_mode_mutect"
+scratch_dir : single_mode_mutect/scratch"
+
+gatk4 : "src/gatk-4.0.4.0/gatk-package-4.0.4.0-local.jar"
+java : "src/jdk1.8.0_144/bin/java"
+ref_fasta : "references/GRCh37_plus_decoy/hs37d5.fa"
+bed_file : "genomes/hg19/bed_files/wgs_nochr.bed"
+gnomad : "genomes/hg19/af-only-gnomad.raw.sites.b37.vcf.gz"
