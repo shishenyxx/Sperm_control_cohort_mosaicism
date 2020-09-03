@@ -1,0 +1,130 @@
+configfile: "snake_conf.yaml"
+
+def get_samples():
+    samples = {}
+    with open(config["input_paths"], "r") as f:
+        for line in f:
+            if line.startswith("#"):
+               continue
+            id, sex, path, sample = line.rstrip().split("\t")
+            samples[id] = (sex, path, sample)
+    return samples
+
+def get_alpha_beta(filename):
+    alpha = 0
+    beta = 0
+    with open(filename, "r") as f:
+        for line in f:
+            if line.startswith("alpha"):
+                alpha = int(line.rstrip().split(": ")[-1])    
+            if line.startswith("beta"):
+                beta = int(line.rstrip().split(": ")[-1])  
+    return alpha, beta
+  
+N_INTERVALS = config["n_intervals"]
+INTERVALS = ["%04d" % x for x in range(N_INTERVALS)]
+SAMPLES = get_samples()
+
+GATK4 = config["gatk4"]
+JAVA = config["java"]
+
+OUT_DIR = config["out_dir"]
+SCRATCH_DIR = config["scratch_dir"]
+REF_FASTA = config["ref_fasta"]
+REF_BED = config["ref_bed"]
+DBSNP = config["dbsnp"]
+
+localrules: all
+
+rule all:
+    input:
+        expand(OUT_DIR + "/gvcfs/{sample}.gvcf.gz", sample=SAMPLES.keys()),
+        expand(OUT_DIR + "/genotype_gvcfs/{sample}.vcf.gz", sample=SAMPLES.keys())
+
+rule get_intervals:
+    input:
+        REF_BED
+    output:
+        expand(SCRATCH_DIR + "/intervals/{interval}-scattered.intervals", interval=INTERVALS)
+    params:
+        cluster = "-q home -l walltime=24:00:00",
+        out_dir = SCRATCH_DIR + "/intervals/"
+    shell:
+        "{JAVA} {GATK4} SplitIntervals "
+        "    -R {REF_FASTA} "
+        "    -L {input} "
+        "    --scatter-count {N_INTERVALS} "
+        "    -O {params.out_dir}; "
+        "sleep 60;"
+
+rule run_haplotype_caller:
+    input:
+        bam = lambda wildcards: SAMPLES[wildcards.sample][1],
+        interval = SCRATCH_DIR + "/intervals/{interval}-scattered.intervals"
+    output:
+        SCRATCH_DIR + "/gvcf/{sample}/{interval}.gvcf.gz"
+    benchmark:
+        OUT_DIR + "/benchmarks/gvcf/{sample}/{interval}.txt"
+    params:
+        sample = lambda wildcards: SAMPLES[wildcards.sample][2],
+        cluster = "-q home -M 'yangxx@health.ucsd.edu' -l nodes=1:ppn=4,mem=16g -l walltime=8:00:00"
+    shell:
+        "{JAVA} -Xmx14G -jar {GATK4} HaplotypeCaller "
+        "    -R {REF_FASTA} "
+        "    -I {input.bam} "
+        "    -L {input.interval} "
+        "    -D {DBSNP} "
+         "    --sample-name {params.sample} "
+        "    --emit-ref-confidence GVCF "
+        "    -O {output} "
+
+# combine gvcf files for a single sample into one gvcf
+rule make_sample_interval_gvcf_list:
+    input:
+        expand(SCRATCH_DIR + "/gvcf/{{sample}}/{interval}.gvcf.gz",
+                   interval=INTERVALS)
+    output:
+        SCRATCH_DIR + "/sample_gvcf_lists/{sample}_gvcfs.list"
+    params:
+        cluster = "-q home -l nodes=1:ppn=1 -l walltime=24:00:00"
+    run:
+        out_f = open(output[0], "w")
+
+        for f in input:
+            out_f.write(f + "\n")
+
+        out_f.close()
+
+rule combine_sample_gvcfs:
+    input:
+        gvcf_list = SCRATCH_DIR + "/sample_gvcf_lists/{sample}_gvcfs.list"
+    output:
+        OUT_DIR + "/gvcfs/{sample}.gvcf.gz"
+    benchmark:
+        OUT_DIR + "/benchmarks/combined_sample_gvcf/{sample}.txt"
+    params:
+        cluster = "-q home -l nodes=1:ppn=4,mem=16g -l walltime=64:00:00"
+    shell:
+        "{JAVA} -Xmx14G -jar {GATK4} CombineGVCFs "
+        "    -R {REF_FASTA} "
+        "    -V {input.gvcf_list} "
+        "    -O {output}"
+
+rule genotype_gvcfs:
+    input:
+        OUT_DIR + "/gvcfs/{sample}.gvcf.gz"
+    output:
+        OUT_DIR + "/genotype_gvcfs/{sample}.vcf.gz"
+    benchmark:
+        OUT_DIR + "/benchmarks/genotype/{sample}.txt"
+    params:
+        cluster = "-q home -l nodes=1:ppn=8,mem=32g -l walltime=128:00:00",
+    shell:
+        "{JAVA} -Xmx30G -jar {GATK4} "
+        "    GenotypeGVCFs "
+        "    -R {REF_FASTA} "
+        "    -V {input} "
+        "    -O {output} "
+        "    -new-qual "
+        "    --max-alternate-alleles 4 "
+
