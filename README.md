@@ -2,9 +2,9 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/).
 
-The manuscript is now available on bioRxiv [https://doi.org/10.1101/2020.10.14.339796 ](https://www.biorxiv.org/content/10.1101/2020.10.14.339796v1)
+The manuscript is now available on bioRxiv [https://doi.org/10.1101/2020.10.14.339796 ](https://doi.org/10.1101/2020.10.14.339796 )
 
-Please cite Yang X., Breuss M., Xin X., Antaki D., James K. N., Stanley V., Ball L. L., George R. D., Wirth S. A., Cao B. Nguyen A., McEvoy-Venneri J., Chai G., Nahas S., Karaan L. V. D., Ding Y., Sebat J., Gleeson J. G. 2020. Temporal stability of human sperm mosaic mutations results in life-long threat of transmission to offspring. bioRxiv.
+Please cite <b>Yang X., Breuss M., Xin X., Antaki D., James K. N., Stanley V., Ball L. L., George R. D., Wirth S. A., Cao B. Nguyen A., McEvoy-Venneri J., Chai G., Nahas S., Karaan L. V. D., Ding Y., Sebat J., Gleeson J. G. 2020. Temporal stability of human sperm mosaic mutations results in life-long threat of transmission to offspring. bioRxiv.</b>
 
 -----------------------------------
 
