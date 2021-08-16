@@ -2,7 +2,7 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/).
 
-Cite the codes: <b>Yang X, Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](http://www.doi.org/10.1016/j.cell.2021.07.024))</i></b>
+Cite the codes: <b>Yang X, Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell 2021](www.doi.org/10.1016/j.cell.2021.07.024 ))</i></b>
 
 -----------------------------------
 
