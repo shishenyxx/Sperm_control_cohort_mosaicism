@@ -2,7 +2,7 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/). The [first](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA660493&o=acc_s%3Aa) and [second](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA588332&o=acc_s%3Aa) dataset can be accessed through [SRA Run Selector](https://trace.ncbi.nlm.nih.gov/Traces/study/?).
 
-Cite the codes: <b>Yang X & Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>(Cell 2021, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
+Cite the codes: <b>Yang X & Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
 
 -----------------------------------
 
