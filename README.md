@@ -2,8 +2,6 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/). The [first](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA660493&o=acc_s%3Aa) and [second](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA588332&o=acc_s%3Aa) dataset can be accessed through [SRA Run Selector](https://trace.ncbi.nlm.nih.gov/Traces/study/?).
 
-Cite the codes: <b>Yang X & Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
-
 -----------------------------------
 
 ### 1. Pipelines for the process of whole-genome sequencing data
@@ -58,3 +56,7 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 
 [Codes](https://github.com/shishenyxx/Sperm_control_cohort_mosaicism/blob/master/Plot/Analysis_of_validation_rates.r) for the analysis of accuracy of number of variants and estimate limit of sampling with age in different groups. 
 
+
+-----------------------------------
+
+Cite the data and codes: <b>Yang X & Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
