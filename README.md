@@ -60,7 +60,7 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 -----------------------------------
 ### 4. Contact:
 
-:email: Prof. Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu), [contact@gleesonlab.org](mailto:contact@gleesonlab.org)
+:email: Prof. Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu), or the Gleeson lab [contact@gleesonlab.org](mailto:contact@gleesonlab.org)
 
 [Prof. Joseph Gleeson's lab at the University of California San Diego and Rady Children's Institute for Genomic Medicine](http://www.gleesonlab.org/index.html)
 
