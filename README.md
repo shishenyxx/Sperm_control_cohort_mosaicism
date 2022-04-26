@@ -72,7 +72,7 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 -----------------------------------
 ### 5. Cite the data and codes:
 
- <b>Yang X & Breuss MW, et al., Gleeson JG. Developmental and temporal characteristics of clonal sperm mosaicism. <i>([Cell](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
+ <b>Yang X & Breuss MW, et al., Gleeson JG. [Developmental and temporal characteristics of clonal sperm mosaicism.](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021. <i>(Cell, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</i></b>
 
 
 
