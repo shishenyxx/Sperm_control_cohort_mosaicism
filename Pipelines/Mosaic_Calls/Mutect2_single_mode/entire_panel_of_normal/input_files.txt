@@ -1,0 +1,2 @@
+F01-blood	normal	/F01-Blood.bam
+F01-sperm	tumor	/F01-sperm.bam
