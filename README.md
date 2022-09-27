@@ -64,7 +64,7 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 
 :email: Martin Breuss: [martin.breuss@cuanschutz.edu](mailto:martin.breuss@cuanschutz.edu)
 
-:email: Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu), or the Gleeson lab [contact@gleesonlab.org](mailto:contact@gleesonlab.org)
+:email: Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu), or the Gleeson lab [gleesonlab@health.ucsd.edu](mailto:gleesonlab@health.ucsd.edu)
 
 -----------------------------------
 ### 5. Cite the data and codes:
