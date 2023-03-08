@@ -2,7 +2,7 @@
 
 This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/). The [first](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA660493&o=acc_s%3Aa) and [second](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA588332&o=acc_s%3Aa) dataset can be accessed through [SRA Run Selector](https://trace.ncbi.nlm.nih.gov/Traces/study/?).
 
-<img src="https://user-images.githubusercontent.com/17311837/223874712-fea99e69-eb9a-4b78-a100-f4caf659b29e.png" alt="Sperm_Mosaic_Cover" width=30%> 
+<img src="https://user-images.githubusercontent.com/17311837/223877525-ce835f79-274a-432b-9bf2-3e9405c41499.png" alt="Sperm_Mosaic_Cover" width=50%> 
 
 -----------------------------------
 
@@ -72,6 +72,9 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 ### 5. Cite the data and codes:
 
  <b>Yang X & Breuss MW, <i>et al.,</i> Gleeson JG. [Developmental and temporal characteristics of clonal sperm mosaicism.](https://www.sciencedirect.com/science/article/abs/pii/S0092867421008837) 2021. (<i>Cell</i>, DOI:[10.1016/j.cell.2021.07.024](https://www.doi.org/10.1016/j.cell.2021.07.024 ), PMID:[34388390](https://pubmed.ncbi.nlm.nih.gov/34388390/))</b>
+ 
+<img src="https://user-images.githubusercontent.com/17311837/223874712-fea99e69-eb9a-4b78-a100-f4caf659b29e.png" alt="Sperm_Mosaic_Cover" width=30%> 
+
 
 
 
