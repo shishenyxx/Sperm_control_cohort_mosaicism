@@ -1,6 +1,6 @@
 # Sperm control cohort mosaicism
 
-This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available on SRA under [PRJNA660493](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [PRJNA588332](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/). The [first](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA660493&o=acc_s%3Aa) and [second](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA588332&o=acc_s%3Aa) dataset can be accessed through [SRA Run Selector](https://trace.ncbi.nlm.nih.gov/Traces/study/?).
+This repository collects pipelines, codes, and some intermediate results for the study of mosaic SNV/Indels for sperm, blood, and other samples of a control cohort. Raw data of this study is available [here](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA660493/) and [here](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA588332/). The [first](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA660493&o=acc_s%3Aa) and [second](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA588332&o=acc_s%3Aa) dataset can be accessed through [SRA Run Selector](https://trace.ncbi.nlm.nih.gov/Traces/study/?).
 
 <img src="https://user-images.githubusercontent.com/17311837/223877525-ce835f79-274a-432b-9bf2-3e9405c41499.png" alt="Sperm_Mosaic_Cover" width=50%> 
 
