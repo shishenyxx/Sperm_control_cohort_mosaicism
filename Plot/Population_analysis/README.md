@@ -22,11 +22,11 @@ plink --bfile 1kgp.pruned --bmerge my_bfile.pruned --geno 0 --merge-mode 1 --mak
 
 plink --bfile 1kgp_my_bfile --pca --out my_bfile.pca
 
-(plinkv1.9 from Danny: /home/dantakli/4dbsm/ancestry/README.md)
+(plinkv1.9 from Danny: /home/dantakli/4dbsm/ancestry/README.md, hg19 without chr is used)
 
 (Also refer to /projects/ps-gleesonlab6/4dbsm/jun_2019/hpcaller/ancestry/)
 
-# these are the LD pruned markers
+(below are the LD pruned markers)
 
 /projects/ps-gleesonlab6/4dbsm/jun_2019/hpcaller/ancestry/1kgp.pruned.*
 
