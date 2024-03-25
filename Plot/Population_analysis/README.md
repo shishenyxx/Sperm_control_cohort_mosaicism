@@ -16,12 +16,15 @@ plink --bfile my_bfile --extract /projects/ps-gleesonlab6/4dbsm/jun_2019/hpcalle
 
 5. merge 1kgp with your vcf
 
-plink --bfile 1kgp.pruned --bmerge my_bfile.pruned --geno 0 --merge-mode 1 --make-bed --out 1kgp_my_bfile5. pca (10 components)
-plink --bfile 1kgp_my_bfile --pca --out my_bfile.pcaI use plinkv1.9
+plink --bfile 1kgp.pruned --bmerge my_bfile.pruned --geno 0 --merge-mode 1 --make-bed --out 1kgp_my_bfile
 
-(code from Danny: /home/dantakli/4dbsm/ancestry/README.md)
+6. pca (10 components)
 
-/projects/ps-gleesonlab6/4dbsm/jun_2019/hpcaller/ancestry/
+plink --bfile 1kgp_my_bfile --pca --out my_bfile.pca
+
+(plinkv1.9 from Danny: /home/dantakli/4dbsm/ancestry/README.md)
+
+(Also refer to /projects/ps-gleesonlab6/4dbsm/jun_2019/hpcaller/ancestry/)
 
 # these are the LD pruned markers
 
