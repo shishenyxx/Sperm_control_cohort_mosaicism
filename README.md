@@ -62,11 +62,11 @@ UpSet plot is generated from an [online tool](https://vcg.github.io/upset/).
 -----------------------------------
 ### 4. Contact:
 
-:email: Xiaoxu Yang: [xiy010@health.ucsd.edu](mailto:xiy010@health.ucsd.edu), [yangxiaoxu-shishen@hotmail.com](mailto:yangxiaoxu-shishen@hotmail.com)
+:email: Xiaoxu Yang: [u6055394@utah.edu](mailto:u6055394@utah.edu), [xiaoxuyanglab@gmail.com](mailto:xiaoxuyanglab@gmail.com),[xiy010@health.ucsd.edu](mailto:xiy010@health.ucsd.edu)
 
 :email: Martin Breuss: [martin.breuss@cuanschutz.edu](mailto:martin.breuss@cuanschutz.edu)
 
-:email: Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu), or the Gleeson lab [gleesonlab@health.ucsd.edu](mailto:gleesonlab@health.ucsd.edu)
+:email: Joseph Gleeson: [jogleeson@health.ucsd.edu](mailto:jogleeson@health.ucsd.edu)
 
 -----------------------------------
 ### 5. Cite the data and codes:
